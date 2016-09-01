@@ -1,0 +1,20 @@
+This version of 2013 FARS file was compiled on 6/3/2016. 
+There are two folders, one for national and one for Puerto Rico. 
+In each folder, there are two zip files, one in SAS format and one in DBF format.
+The changes are:
+- Massachusetts: Case No. 196 – Two occupants were added and some other fields were updated.
+- Pennsylvania: Updates were made to the following cases 195, 242, 774, 884, 1102, 1110 and 1113
+- South Carolina: Case No. 388 – This case was deleted
+Alcohol related files are regenerated on 8/11/2016.
+For this version, auxiliary files are included in the SAS and DBF sets instead of as independent zip files.
+==========================
+FARS Auxiliary Files
+--------------------
+The FARS Auxiliary files are datasets that are derived from the standard FARS datasets: 
+1. Accident -> Acc_Aux
+2. Vehicle -> Veh_Aux
+3. Person -> Per_Aux
+These files are joined by the standard key variables.
+Please read the following document for additional details: http://www-nrd.nhtsa.dot.gov/Pubs/811364.pdf
+For User Manuals, please go to: ftp://ftp.nhtsa.dot.gov/FARS/FARS-Doc/FARS_Auxiliary_Analytical_User_Manuals.zip
+For SAS Format Catalog, please go to: ftp://ftp.nhtsa.dot.gov/FARS/Auxiliary_FARS_Files_Formats
