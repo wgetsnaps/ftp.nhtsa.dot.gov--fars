@@ -1,0 +1,180 @@
+                 FATAL ACCIDENT REPORTING SYSTEM
+                1975-81 SEQUENTIAL ANALYSIS FILES             
+                      RECORDS DESCRIPTIONS                    
+                                                              
+DATA FIELD                               TYPE START LENGTH    
+ACCIDENT LEVEL                                                
+       CASE STATE                          N     1     2      
+       CASE NUMBER                         N     3     4      
+       LEVEL  (value: 1)                   N     7     1      
+       CARD   (value: 1)                   N     8     1      
+       filler (value: blanks)              N     9     4      
+       CITY                                N    13     4      
+       COUNTY                              N    17     3      
+       ACCIDENT DATE                                          
+           MONTH/DAY mmdd                  N    20     4      
+           YEAR (file calendar year:75-81) N    24     2      
+       ACCIDENT TIME  hhmm                 N    26     4      
+       NUMBER OF VEHICLE FORMS             N    30     2      
+       NUMBER OF PERSON FORMS              N    32     2      
+       NUMBER OF VEHICLES INVOLVED         N    34     2      
+       LAND USE                            N    36     1      
+       CLASS TRAFFICWAY                    N    37     1      
+       ROADWAY FUNCTION CLASS              N    38     1      
+       TA-1 CLASS                          N    39     1      
+       SPECIAL JURISDICTION                N    40     1      
+       FIRST HARMFUL EVENT                 N    41     2      
+       MANNER OF COLLISION                 N    43     1      
+       RELATION TO JUNCTION                N    44     1      
+       RELATION TO ROADWAY                 N    45     1      
+       ROADWAY FLOW                        N    46     1      
+       NUMBER OF LANES                     N    47     1      
+       SPEED LIMIT                         N    48     2      
+       ALIGNMENT                           N    50     1      
+       PROFILE                             N    51     1      
+       SURFACE TYPE                        N    52     1      
+       SURFACE CONDITION                   N    53     1      
+       TRAFFIC CONTROLS                    N    54     2      
+       LIGHT CONDITION                     N    56     1      
+       ATMOSPHERIC CONDITION               N    57     1      
+       HIT AND RUN                         N    58     1      
+       CONSTRUCTION/MAINTENANCE ZONE       N    59     1      
+       NOTIFICATION TIME EMS hhmm          N    60     4      
+       ARRIVAL TIME EMS hhmm               N    64     4      
+       SCHOOL BUS RELATED                  N    68     1      
+       RELATED FACTOR (1)-ACCIDENT LEVEL   N    69     2      
+       RELATED FACTOR (2)-ACCIDENT LEVEL   N    71     2      
+       RELATED FACTOR (3)-ACCIDENT LEVEL   N    73     2      
+       RAIL GRADE CROSSING                A/N   75     7      
+       NUMBER OF FATALITIES                N    82     2      
+       DAY OF WEEK                         N    84     1      
+       NUMBER DRINKING DRIVERS             N    85     1      
+       filler                              N    86     2      
+                                                  Page 1 of 4.
+                 FATAL ACCIDENT REPORTING SYSTEM              
+                1975-81 SEQUENTIAL ANALYSIS FILES             
+                      RECORDS DESCRIPTIONS                    
+                                                              
+DATA FIELD                               TYPE START LENGTH    
+VEHICLE LEVEL                                                 
+       CASE STATE                          N     1     2      
+       CASE NUMBER                         N     3     4      
+       LEVEL  (value: 2)                   N     7     1      
+       CARD   (value: 1)                   N     8     1      
+       VEHICLE NUMBER                      N     9     2      
+       filler (value: blanks)              A    11     2      
+       MAKE                                N    13     2      
+       MODEL                               N    15     2      
+       BODY TYPE                           N    17     2      
+       MODEL YEAR                          N    19     2      
+       VIN                                A/N   21    10      
+       REGISTRATION STATE                  N    31     2      
+       ROLLOVER                            N    33     1      
+       JACKKNIFE                           N    34     1      
+       TRAVEL SPEED                        N    35     2      
+       TOWED TRAILING UNIT                 N    37     1      
+       SPECIAL USE                         N    38     1      
+       EMERGENCY USE                       N    39     1      
+       IMPACT POINT INITIAL                N    40     2      
+       IMPACT POINT PRINCIPAL              N    42     2      
+       EXTENT OF DEFORMATION               N    44     1      
+       VEHICLE ROLE                        N    45     1      
+       MANNER OF LEAVING SCENE             N    46     1      
+       FIRE OCCURRENCE                     N    47     1      
+       NUMBER OF OCCUPANTS                 N    48     2      
+       NUMBER OF DEATHS                    N    50     2      
+       RELATED FACTOR (1)-VEHICLE LEVEL    N    52     2      
+       RELATED FACTOR (2)-VEHICLE LEVEL    N    54     2      
+       MOST HARMFUL EVENT                  N    56     2      
+       VINA DECODES                                           
+          AUTO                                                
+            WEIGHT                        A/N   58     4      
+            WHEELBASE (SHORT)             A/N   62     4      
+            WHEELBASE (LONG)              A/N   66     4      
+          MODEL                           A/N   70     3      
+          BODY TYPE                       A/N   73     2      
+          TRUCK                                               
+            FUEL CODE                      A    75     1      
+            WEIGHT CODE                   A/N   76     1      
+            SERIES                        A/N   77     3      
+          MOTORCYCLE                                          
+            DISPLACEMENT                  A/N   80     4      
+       filler (value: blanks)              A    84     2      
+       VIN LENGTH                          N    86     2      
+                                                              
+                                                  Page 2 of 4.                 FATAL ACCIDENT REPORTING SYSTEM              
+                1975-81 SEQUENTIAL ANALYSIS FILES             
+                      RECORDS DESCRIPTIONS                    
+                                                              
+DATA FIELD                               TYPE START LENGTH    
+DRIVER LEVEL                                                  
+       CASE STATE                          N     1     2      
+       CASE NUMBER                         N     3     4      
+       LEVEL  (value: 2)                   N     7     1      
+       CARD   (value: 2)                   N     8     1      
+       VEHICLE NUMBER                      N     9     2      
+       filler (value: blanks)              N    11     1      
+       DRIVER PRESENCE                     N    13     1      
+       DRIVER DRINKING                     N    14     1      
+       LICENSE STATE                       N    15     2      
+       LICENSE STATUS                      N    17     1      
+       LICENSE RESTRICTIONS                N    18     1      
+       DRIVER TRAINING                     N    19     1      
+       VIOLATIONS CHARGED                  N    20     1      
+       PREVIOUS RECORDED ACCIDENTS         N    21     2      
+       PREVIOUS RECORDED SUSPENSIONS       N    23     2      
+       PREVIOUS DWI CONVICTIONS            N    25     2      
+       PREVIOUS SPEEDING CONVICTIONS       N    27     2      
+       PREVIOUS OTHER MOTOR VEHICLE CONV   N    29     2      
+       MONTH OF LAST ACCIDENT              N    31     2      
+       YEAR OF LAST ACCIDENT               N    33     2      
+       MONTH OF FIRST ACCIDENT             N    35     2      
+       YEAR OF FIRST ACCIDENT              N    37     2      
+       RELATED FACTOR (1)-DRIVER LEVEL     N    39     2      
+       RELATED FACTOR (2)-DRIVER LEVEL     N    41     2      
+       RELATED FACTOR (3)-DRIVER LEVEL     N    43     2      
+       filler (value: blanks)               A    45    43         
+
+
+
+
+
+                                                Page 3 of 4.
+                 FATAL ACCIDENT REPORTING SYSTEM              
+                1975-81 SEQUENTIAL ANALYSIS FILES             
+                      RECORDS DESCRIPTIONS                    
+                                                              
+DATA FIELD                               TYPE START LENGTH    
+PERSON LEVEL                                                  
+       CASE STATE                          N     1     2      
+       CASE NUMBER                         N     3     4      
+       LEVEL (value: 3)                    N     7     1      
+       CARD  (value: 1)                    N     8     1      
+       VEHICLE NUMBER                      N     9     2      
+       PERSON NUMBER                       N    11     2      
+       AGE                                 N    13     2      
+       SEX                                 N    15     1      
+       PERSON TYPE                         N    16     1      
+       SEATING POSITION                    N    17     2      
+       MANUAL RESTRAINT                    N    19     1      
+       AUTOMATIC RESTRAINT                 N    20     1      
+       NON MOTORIST LOCATION               N    21     2      
+       EJECTION                            N    23     1      
+       EXTRICATION                         N    24     1      
+       ALCOHOL INVOLVEMENT                 N    25     1      
+       ALCOHOL TEST RESULTS                N    26     2      
+       INJURY SEVERITY                     N    28     1      
+       TAKEN TO HOSPITAL                   N    29     1      
+       DEATH DATE mmddyy                   N    30     6      
+       DEATH TIME hhmm                     N    36     4      
+       LAG TIME ACCIDENT TO DEATH hhhmm    N    40     5      
+       RELATED FACTOR (1)-PERSON LEVEL     N    45     2      
+       RELATED FACTOR (2)-PERSON LEVEL     N    47     2      
+       RELATED FACTOR (3)-PERSON LEVEL     N    49     2      
+       filler (value: blanks)              A    51    37      
+                                                              
+                                                              
+                                                              
+                                                              
+                                                              
+                                                  Page 4 of 4.
