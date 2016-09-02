@@ -9,6 +9,8 @@ This repo is a mirror of the [National Highway Traffic Safety's Fatality Analysi
 https://wgetsnaps.github.io/ftp.nhtsa.dot.gov--fars
 
 
+Or, to browse the mirrored FTP directory via Github's web-interface, just go to [fars/](fars/)
+
 
 
 # Sources
