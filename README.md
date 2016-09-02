@@ -4,12 +4,11 @@ This repo is a mirror of the [National Highway Traffic Safety's Fatality Analysi
 
 
 
-### You can view an HTML index of the FTP contents at:
+- View the FTP mirror as HTML: https://wgetsnaps.github.io/ftp.nhtsa.dot.gov--fars
+- Download this repo as a big ol ZIP: https://github.com/wgetsnaps/ftp.nhtsa.dot.gov--fars/archive/master.zip
+- View the mirrored FTP site in Github's web interface: [fars/](fars/)
 
-https://wgetsnaps.github.io/ftp.nhtsa.dot.gov--fars
 
-
-Or, to browse the mirrored FTP directory via Github's web-interface, just go to [fars/](fars/)
 
 
 
