@@ -12,6 +12,7 @@ from sys import stdout
 from urllib.parse import quote
 
 DEPTH_RX = compile(r'[└├│]')
+FILE_RX = compile(r'\.\w{2,4}$')
 STEM_RX = compile(r'^(.*?── )(.+)')
 URL_ROOT = 'https://wgetsnaps.github.io/ftp.nhtsa.dot.gov--fars/'
 
@@ -42,8 +43,13 @@ with Popen(['tree', 'fars'], stdout=PIPE) as proc:
             [stack.pop() for i in range(stackdepth - depth)]
 
         stack.append(stem)
-        url = URL_ROOT + '/'.join(quote(s) for s in stack)
-        # https://wgetsnaps.github.io/ftp.nhtsa.dot.gov--fars/fars/FARS-DOC/DEFS2001.zip
-        stdout.write("""{0}<a href="{1}">{2}</a>\n""".format(roottxt, url, stem))
+
+        # test to see if file. Icky to rely on extensions I know; will fix later
+        if FILE_RX.search(stem):
+            url = URL_ROOT + '/'.join(quote(s) for s in stack)
+            # https://wgetsnaps.github.io/ftp.nhtsa.dot.gov--fars/fars/FARS-DOC/DEFS2001.zip
+            stdout.write("""{0}<a href="{1}">{2}</a>\n""".format(roottxt, url, stem))
+        else:
+            stdout.write("""{0}{1}\n""".format(roottxt, stem))
 
 stdout.write("\n</pre>\n")
